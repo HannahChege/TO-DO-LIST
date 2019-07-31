@@ -1,0 +1,6 @@
+<h2>To do list {{month}}/{{day}}/{{year}}</h2>
+
+<h4>{{currentFocus}}</h4>
+<ul>
+  <li *ngFor="let currentTask of tasks">{{currentTask.description}} <button (click)="editTask()">Edit!</button></li>
+</ul>
